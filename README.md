@@ -115,3 +115,4 @@ These two modules accomplish the same output goal with two different types of in
 
 ### I/0:
 
+![](C:\Users\Austin\Pictures\BiSS C Documentation Snips\DAQ BiSS C Slave.PNG)
