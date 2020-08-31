@@ -109,7 +109,7 @@ Text filler
 
 ### Overview: 
 
-These two modules accomplish the same output goal with two different types of inputs. The 
+These two modules accomplish the same output goal with two different types of inputs. The e
 
 ### Motor Variables:
 
