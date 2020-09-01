@@ -38,9 +38,13 @@ Include picture of BiSS C waveform
 
 ​	The first purpose of this block is to listen to the Encoder SLO input. When
 
- ![BiSS C Master Block](C:\Users\Austin\Pictures\BiSS C Documentation Snips\BiSS C Master Block.PNG)
+ 
 
-Text filler
+The simulink logic diagram is shown here:
+
+![BiSS C Master Block](C:\Users\Austin\Pictures\BiSS C Documentation Snips\BiSS C Master Block.PNG)
+
+The Bit Counter & Error Detector state diagram is shown here:
 
 
 
@@ -52,9 +56,9 @@ Text filler
 
 ##### 		Inputs
 
-* SLO In
+* SLO In - Raw data in from the encoder
 
-* Clock In
+* Clock In - Clock signal from the FPGA
 
   ##### Outputs
 
@@ -71,10 +75,10 @@ Text filler
 
 ### 	Variables:
 
-* bankToggle1 and bankToggle2
-* onDigit_Read
-* read_keeper
-* write_keeper
+* bankToggle1 and bankToggle2 - Switch back and fourth to determine which bank is read to and written from
+* onDigit_Read - Keeps track of the digit being written to
+* read_keeper - Is used to ensure that each read is only performed once
+* write_keeper - Is used to ensure that each write is only performed once
 
 ### 	I/0:
 
@@ -116,3 +120,11 @@ These two modules accomplish the same output goal with two different types of in
 ### I/0:
 
 ![](C:\Users\Austin\Pictures\BiSS C Documentation Snips\DAQ BiSS C Slave.PNG)
+
+## Instructions to Run Simulation
+
+Many of the setup requirements are already housed within the MATLAB simulation file, but there are some things that still need to be done manually. Besides the simulation file, you will also need to download the "Full Splitter Test" MATLAB document. This contains the raw data for the inputs of this splitter, to run a simulation off of. The signals can be edited by the user to test different scenarios. 
+
+Once this file is attained, the "Connect Inputs" wizard will need to be used, from under the simulation tab on the BiSS C Splitter Simulink model. From there, the "Full Splitter Test" document can be opened. Once it has been opened, use the green play button to map to inputs, and then use the "Mark for Simulation" button to run those signals on the next test. From there, you may run the simulation through Simulink and use the Data Inspector to view the results. 
+
+## Modifications to HDL Code
