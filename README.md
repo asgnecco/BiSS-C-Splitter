@@ -8,11 +8,11 @@ This BiSS C splitter is designed to deliver location requests from either a data
 
 Include picture of BiSS C waveform
 
+![](https://github.com/asgnecco/BiSS-C-Splitter/blob/working/BiSS%20C%20Documentation%20Snips/BiSS-C_Sample_Waveform.jpg?raw=true)
 
 
-![BiSS-C_Sample_Waveform](C:\Users\Austin\Documents\BiSS-C-Splitter\BiSS C Documentation Snips\BiSS-C_Sample_Waveform.jpg)
 
-![MainSplitterCapture](C:\Users\Austin\Pictures\MainSplitterCapture.PNG)
+![](https://github.com/asgnecco/BiSS-C-Splitter/blob/working/BiSS%20C%20Documentation%20Snips/MainSplitterCapture.PNG?raw=true)
 
 
 
