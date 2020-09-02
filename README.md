@@ -18,7 +18,7 @@ Include picture of BiSS C waveform
 
 ## I/O
 
-### 	Inputs:
+##### 	   	Inputs:
 
 * SLO In - Accepts serial position data from the encoder as a Boolean.
 
@@ -26,21 +26,23 @@ Include picture of BiSS C waveform
 
 * Motor MA- Accepts a Boolean clock signal, in line with the MA signal shown above, when the motor is requesting data.
 
-  ### Outputs:
+  ##### Outputs:
 
 * Encoder MA - Outputs a Boolean clock signal at 10mhz to constantly drive the encoder.
+
 * DAQ Out - Outputs stored serial data to the DAQ
+
 * Motor SLO - Ouputs stored serial data to the motor, at the frequency specified by Motor MA
 
 ## BiSS C Master:
 
 ### 	Overview:
 
-​	The first purpose of this block is to listen to the Encoder SLO input. When
+​	The first purpose of the BiSS C Master block, is to provide the clocking information for the rest of the diagram and to analyze the signal from 
 
- 
 
-The simulink logic diagram is shown here:
+
+The Simulink logic diagram is shown here:
 
 ![BiSS C Master Block](C:\Users\Austin\Pictures\BiSS C Documentation Snips\BiSS C Master Block.PNG)
 
@@ -62,12 +64,12 @@ The Bit Counter & Error Detector state diagram is shown here:
 
   ##### Outputs
 
-* MA Out
-* Write Clock
-* Error
-* Buffer Out
-* Bit Number
-* Write Request
+* MA Out - A copy of the FPGA clock that can be turned on or off by the bit counter module, in order to drive the encoder.
+* Write Clock - Another copy of the FPGA clock turned on and off at slightly different times, to drive the buffer that records the encoder's data
+* Error - Is triggered high when the Bit Counter module detects an error in the response, so that the buffer does not write corrupt data or switch banks
+* Buffer Out - Data parsed from the encoder's response to be recorded on the buffer
+* Bit Number - The current bit that the encoder is sending, to be recorded on the buffer
+* Write Request - Tells the buffer module that it should begin writing data
 
 ## Buffer
 
@@ -84,40 +86,53 @@ The Bit Counter & Error Detector state diagram is shown here:
 
 ##### 		Inputs
 
-* DAQ Read Request
+* DAQ Read Request - Sent from the DAQ BiSS C Slave module when there is a request from the DAQ to read data.
 
-* DAQ Read Clock
+* DAQ Read Clock - Provides the clocking at which to read the data for the DAQ
 
-* Write Clock
+* Write Clock - Provides the clocking at which to write data to the buffer
 
-* Error
+* Error - Is set to high if there is an error detected, so that the buffers do not switch, and bad data is disregarded.
 
-* Buffer Out
+* Buffer Out - The stream of data coming out of the buffer to be sent to the DAQ or Motor
 
-* Bit Number
+* Bit Number - The number of the bit that is currently being fed to the buffer
 
-* Write Request
+* Write Request - Lets the buffer know that there is data ready to be written
 
-* Motor Read Clock
+* Motor Read Clock - Provides the clocking at which to read the data for the motor
 
-* Motor Read Request
+* Motor Read Request - Sent from the Motor BiSS C Slave module when there is a request from the motor to read data.
 
   ##### Outputs
 
-* DAQ Read Out
-* DAQ Read Done
-* Motor Read Out
-* Motor Read Done
+* DAQ Read Out - Read data to be sent to the DAQ
+* DAQ Read Done - Tells the DAQ BiSS C Slave module that data is done being read
+* Motor Read Out- Tells the Motor BiSS C Slave module that data is done being read
+* Motor Read Done - Read data to be sent to the motor
 
 ## DAQ and Motor BiSS C Slaves
 
 ### Overview: 
 
-These two modules accomplish the same output goal with two different types of inputs. The e
+These two modules are essentially the same, although they do have slightly different names to some of their inputs and outputs. The state diagram in the middle acts in the same manner as a SR Flip-flop, in that the output state can be toggled on by a high signal on MA_in, and can only be turned off by a high signal on the reset pin. The delay block is necessary in order to prevent logic loops.
 
-### Motor Variables:
+
 
 ### I/0:
+
+##### Inputs
+
+* Buffer In - The data being sent into the Motor and DAQ modules to pass through to the desired device
+* Trig/MA In - Designation depends on whether it is in the Motor or DAQ module. Provides the clocking for data readback
+* DAQ/Motor Read Done - Designation depends on whether it is in the Motor or DAQ module. Is set high when data readback is completed
+
+##### Outputs
+
+* Data Log/SLO Out - Data out to the corresponding device
+* 
+
+
 
 ![](C:\Users\Austin\Pictures\BiSS C Documentation Snips\DAQ BiSS C Slave.PNG)
 
