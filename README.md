@@ -1,8 +1,8 @@
-BiSS C Splitter Overview
+# FPGA Based BiSS C Splitter
 
 ### Overview:
 
-This BiSS C splitter is designed to deliver location requests from either a data logger or a connected motor to an encoder, and serve the position information back to the device that requested it. It is to be implemented on an an Xilinx Artix-7 FPGA, although will be compatible with any Xilinx product with minor modifications in Vivado, and with any other FPGA with additional modifications. 
+This BiSS C splitter is designed to deliver requests to an encoder for it's location from either a data logger or a connected motor, and serve the position information back to the device that requested it. It is to be implemented on an an Xilinx Artix-7 FPGA, although will be compatible with any Xilinx product with minor modifications in Vivado, and with any other FPGA with additional modifications- many of which are detailed at the end of this document.
 
 ### General Operation:
 
@@ -44,13 +44,13 @@ Include picture of BiSS C waveform
 
 The Simulink logic diagram is shown here:
 
-![BiSS C Master Block](C:\Users\Austin\Pictures\BiSS C Documentation Snips\BiSS C Master Block.PNG)
+![](https://github.com/asgnecco/BiSS-C-Splitter/blob/working/BiSS%20C%20Documentation%20Snips/BiSS%20C%20Master%20Block.PNG?raw=true)
 
 The Bit Counter & Error Detector state diagram is shown here:
 
+![](https://github.com/asgnecco/BiSS-C-Splitter/blob/working/BiSS%20C%20Documentation%20Snips/Counter%20Module.PNG?raw=true)
 
 
-![Counter Module](C:\Users\Austin\Pictures\BiSS C Documentation Snips\Counter Module.PNG)
 
 ### 	Variables:
 
@@ -74,6 +74,14 @@ The Bit Counter & Error Detector state diagram is shown here:
 ## Buffer
 
 ### 	Overview:
+
+##### Buffer Module:
+
+![](https://github.com/asgnecco/BiSS-C-Splitter/blob/working/BiSS%20C%20Documentation%20Snips/Buffer.PNG?raw=true)
+
+##### Task Scheduler:
+
+![](https://github.com/asgnecco/BiSS-C-Splitter/blob/working/BiSS%20C%20Documentation%20Snips/Read-Write%20Selector.PNG?raw=true)
 
 ### 	Variables:
 
@@ -115,9 +123,15 @@ The Bit Counter & Error Detector state diagram is shown here:
 
 ### Overview: 
 
-These two modules are essentially the same, although they do have slightly different names to some of their inputs and outputs. The state diagram in the middle acts in the same manner as a SR Flip-flop, in that the output state can be toggled on by a high signal on MA_in, and can only be turned off by a high signal on the reset pin. The delay block is necessary in order to prevent logic loops.
+These two modules are essentially the same, although they do have slightly different names to some of their inputs and outputs. The state diagram in the middle acts in the same manner as a SR Flip-flop, in that the output state can be toggled on by a high signal on MA_in, and can only be turned off by a high signal on the reset pin. The delay block is necessary in order to prevent logic loops that prevent the simulation from running.
 
+##### DAQ BiSS C Slave
 
+![](https://github.com/asgnecco/BiSS-C-Splitter/blob/working/BiSS%20C%20Documentation%20Snips/DAQ%20BiSS%20C%20Slave.PNG?raw=true)
+
+##### Motor BiSS C Slave
+
+![](https://github.com/asgnecco/BiSS-C-Splitter/blob/working/BiSS%20C%20Documentation%20Snips/Motor%20BiSS%20C%20Slave.PNG?raw=true)
 
 ### I/0:
 
@@ -130,11 +144,10 @@ These two modules are essentially the same, although they do have slightly diffe
 ##### Outputs
 
 * Data Log/SLO Out - Data out to the corresponding device
-* 
+* DAQ/Motor Read Request - Lets the task scheduler know that data is being requested form the DAQ or motor
+* DAQ/Motor Read Clock - A pass though of the MA In line to provide clocking for the data coming back
 
 
-
-![](C:\Users\Austin\Pictures\BiSS C Documentation Snips\DAQ BiSS C Slave.PNG)
 
 ## Instructions to Run Simulation
 
