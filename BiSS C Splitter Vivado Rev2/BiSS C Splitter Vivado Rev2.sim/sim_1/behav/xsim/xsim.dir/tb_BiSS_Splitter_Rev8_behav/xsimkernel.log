@@ -1,0 +1,4 @@
+Running: xsim.dir/tb_BiSS_Splitter_Rev8_behav/xsimk.exe -simmode gui -wdb tb_BiSS_Splitter_Rev8_behav.wdb -simrunnum 0 -socket 60551
+Design successfully loaded
+Design Loading Memory Usage: 6344 KB (Peak: 6344 KB)
+Design Loading CPU Usage: 30 ms

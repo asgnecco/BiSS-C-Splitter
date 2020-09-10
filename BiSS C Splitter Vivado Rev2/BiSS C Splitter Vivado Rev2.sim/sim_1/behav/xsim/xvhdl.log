@@ -1,0 +1,21 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Austin/Documents/BiSS-C-Splitter/Generated HDL Code/BiSS_Splitter_Rev8/BiSS_Splitter_Rev8_pac.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Austin/Documents/BiSS-C-Splitter/Generated HDL Code/BiSS_Splitter_Rev8/Bit_Counter_Error_Detector.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Bit_Counter_Error_Detector'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Austin/Documents/BiSS-C-Splitter/Generated HDL Code/BiSS_Splitter_Rev8/BiSS_C_Master.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'BiSS_C_Master'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Austin/Documents/BiSS-C-Splitter/Generated HDL Code/BiSS_Splitter_Rev8/Chart_block.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Chart_block'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Austin/Documents/BiSS-C-Splitter/Generated HDL Code/BiSS_Splitter_Rev8/Motor_BiSS_C_Slave.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Motor_BiSS_C_Slave'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Austin/Documents/BiSS-C-Splitter/Generated HDL Code/BiSS_Splitter_Rev8/Chart.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Chart'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Austin/Documents/BiSS-C-Splitter/Generated HDL Code/BiSS_Splitter_Rev8/SimpleDualPortRAM_generic.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'SimpleDualPortRAM_generic'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Austin/Documents/BiSS-C-Splitter/Generated HDL Code/BiSS_Splitter_Rev8/Buffer_rsvd.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'Buffer_rsvd'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Austin/Documents/BiSS-C-Splitter/Generated HDL Code/BiSS_Splitter_Rev8/DAQ_BiSS_C_Slave.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'DAQ_BiSS_C_Slave'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Austin/Documents/BiSS-C-Splitter/Generated HDL Code/BiSS_Splitter_Rev8/BiSS_Splitter_Rev8.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'BiSS_Splitter_Rev8'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Austin/Documents/BiSS-C-Splitter/BiSS C Splitter Vivado Rev2/BiSS C Splitter Vivado Rev2.srcs/sim_1/new/Main_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_BiSS_Splitter_Rev8'

@@ -1,0 +1,11 @@
+vlib work
+vcom  BiSS_Splitter_Rev8_pac.vhd
+vcom  Bit_Counter_Error_Detector.vhd
+vcom  BiSS_C_Master.vhd
+vcom  Chart.vhd
+vcom  SimpleDualPortRAM_generic.vhd
+vcom  Buffer_rsvd.vhd
+vcom  Chart_block.vhd
+vcom  DAQ_BiSS_C_Slave.vhd
+vcom  Motor_BiSS_C_Slave.vhd
+vcom  BiSS_Splitter_Rev8.vhd
