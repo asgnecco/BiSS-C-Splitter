@@ -1,0 +1,16 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../Generated HDL Code/BiSS_Splitter_Rev8/BiSS_Splitter_Rev8_pac.vhd" \
+"../../../../../Generated HDL Code/BiSS_Splitter_Rev8/Bit_Counter_Error_Detector.vhd" \
+"../../../../../Generated HDL Code/BiSS_Splitter_Rev8/BiSS_C_Master.vhd" \
+"../../../../../Generated HDL Code/BiSS_Splitter_Rev8/Chart_block.vhd" \
+"../../../../../Generated HDL Code/BiSS_Splitter_Rev8/Motor_BiSS_C_Slave.vhd" \
+"../../../../../Generated HDL Code/BiSS_Splitter_Rev8/Chart.vhd" \
+"../../../../../Generated HDL Code/BiSS_Splitter_Rev8/SimpleDualPortRAM_generic.vhd" \
+"../../../../../Generated HDL Code/BiSS_Splitter_Rev8/Buffer_rsvd.vhd" \
+"../../../../../Generated HDL Code/BiSS_Splitter_Rev8/DAQ_BiSS_C_Slave.vhd" \
+"../../../../../Generated HDL Code/BiSS_Splitter_Rev8/BiSS_Splitter_Rev8.vhd" \
+"../../../../BiSS C Splitter Vivado Rev2.srcs/sim_1/new/Main_tb.v" \
+
+# Do not sort compile order
+nosort

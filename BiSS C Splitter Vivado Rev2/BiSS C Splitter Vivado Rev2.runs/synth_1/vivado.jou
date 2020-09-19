@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Wed Sep  9 16:47:35 2020
+# Process ID: 16576
+# Current directory: C:/Users/Austin/Documents/BiSS-C-Splitter/BiSS C Splitter Vivado Rev2/BiSS C Splitter Vivado Rev2.runs/synth_1
+# Command line: vivado.exe -log BiSS_Splitter_Rev8.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source BiSS_Splitter_Rev8.tcl
+# Log file: C:/Users/Austin/Documents/BiSS-C-Splitter/BiSS C Splitter Vivado Rev2/BiSS C Splitter Vivado Rev2.runs/synth_1/BiSS_Splitter_Rev8.vds
+# Journal file: C:/Users/Austin/Documents/BiSS-C-Splitter/BiSS C Splitter Vivado Rev2/BiSS C Splitter Vivado Rev2.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source BiSS_Splitter_Rev8.tcl -notrace

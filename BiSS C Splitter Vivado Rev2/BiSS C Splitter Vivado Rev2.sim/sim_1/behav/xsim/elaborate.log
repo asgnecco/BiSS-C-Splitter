@@ -1,0 +1,25 @@
+Vivado Simulator 2020.1
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.1/bin/unwrapped/win64.o/xelab.exe -wto d1f8f6cdd96149a6894e8e7f13d0e3f5 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_BiSS_Splitter_Rev8_behav xil_defaultlib.tb_BiSS_Splitter_Rev8 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package xil_defaultlib.biss_splitter_rev8_pac
+Compiling architecture rtl of entity xil_defaultlib.Bit_Counter_Error_Detector [bit_counter_error_detector_defau...]
+Compiling architecture rtl of entity xil_defaultlib.BiSS_C_Master [biss_c_master_default]
+Compiling architecture rtl of entity xil_defaultlib.Chart_block [chart_block_default]
+Compiling architecture rtl of entity xil_defaultlib.Motor_BiSS_C_Slave [motor_biss_c_slave_default]
+Compiling architecture rtl of entity xil_defaultlib.Chart [chart_default]
+Compiling architecture rtl of entity xil_defaultlib.SimpleDualPortRAM_generic [\SimpleDualPortRAM_generic(addrw...]
+Compiling architecture rtl of entity xil_defaultlib.Buffer_rsvd [buffer_rsvd_default]
+Compiling architecture rtl of entity xil_defaultlib.DAQ_BiSS_C_Slave [daq_biss_c_slave_default]
+Compiling architecture rtl of entity xil_defaultlib.BiSS_Splitter_Rev8 [biss_splitter_rev8_default]
+Compiling architecture tb of entity xil_defaultlib.tb_biss_splitter_rev8
+Built simulation snapshot tb_BiSS_Splitter_Rev8_behav

@@ -1,0 +1,11 @@
+ --> BiSS_Splitter_Rev7_pac
+BiSS_Splitter_Rev7/BiSS C Master/Bit Counter & Error Detector --> Bit_Counter_Error_Detector
+BiSS_Splitter_Rev7/BiSS C Master --> BiSS_C_Master
+BiSS_Splitter_Rev7/Buffer/Chart --> Chart
+BiSS_Splitter_Rev7/Buffer/SimpleDualPortRAM_generic --> SimpleDualPortRAM_generic
+BiSS_Splitter_Rev7/Buffer --> Buffer_rsvd
+BiSS_Splitter_Rev7/DAQ BiSS C Slave/Chart --> Chart_block
+BiSS_Splitter_Rev7/DAQ BiSS C Slave --> DAQ_BiSS_C_Slave
+BiSS_Splitter_Rev7/Motor BiSS C Slave --> Motor_BiSS_C_Slave
+BiSS_Splitter_Rev7_tc --> BiSS_Splitter_Rev7_tc
+BiSS_Splitter_Rev7 --> BiSS_Splitter_Rev7
